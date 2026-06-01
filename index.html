@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Rebel Saints Barber & Style | Industrial Fades & Custom Grooming | Nixa, MO</title>
+    
+    <!-- Design Typography Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind Engine Integration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "rebel-crimson": "#E63946",
+                        "rebel-dark": "#0B0C10",
+                        "rebel-panel": "#141518",
+                        "rebel-border": "#282A30"
+                    },
+                    fontFamily: {
+                        display: ["Russo One", "sans-serif"],
+                        body: ["Hanken Grotesk", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .smooth-transition { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        
+        /* Premium Steel Shimmer Effect for the Red Accent Line */
+        @keyframes steelShimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+        .steel-line {
+            background: linear-gradient(90deg, #E63946 0%, #ffffff 50%, #E63946 100%);
+            background-size: 200% auto;
+            animation: steelShimmer 4s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#0B0C10] text-[#C5C6C7] font-body antialiased min-h-screen flex flex-col overflow-x-hidden scroll-smooth">
+
+    <!-- NAVIGATION HEADER -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0B0C10]/95 backdrop-blur-md border-b border-zinc-900 flex justify-between items-center px-6 md:px-16 py-4 smooth-transition">
+        <div class="font-display text-lg md:text-xl font-black tracking-widest text-white uppercase flex items-center gap-1.5">
+            REBEL SAINTS <span class="text-rebel-crimson">BARBER</span>
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-xs uppercase tracking-widest text-zinc-400 hover:text-white smooth-transition font-bold" href="#lookbook">Premium Lookbook</a>
+            <a class="text-xs uppercase tracking-widest text-zinc-400 hover:text-white smooth-transition font-bold" href="#menu">The Ledger Rates</a>
+            <a class="text-xs uppercase tracking-widest text-zinc-400 hover:text-white smooth-transition font-bold" href="#booking">Secure A Chair</a>
+            <a class="text-xs uppercase tracking-widest text-zinc-400 hover:text-white smooth-transition font-bold" href="#location">Find Us</a>
+        </div>
+        <a href="#booking" class="text-xs uppercase tracking-widest px-5 py-2.5 bg-zinc-950 text-white border border-rebel-crimson hover:bg-rebel-crimson smooth-transition font-bold tracking-wider">
+            Book Appointment
+        </a>
+    </nav>
+
+    <!-- CINEMATIC INDUSTRIAL HERO SECTION -->
+    <section class="relative min-h-[85vh] flex items-center px-6 md:px-16 overflow-hidden pt-24 bg-black">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover opacity-20 filter grayscale contrast-125 scale-105" alt="Rebel Saints Alternative Barber Atmosphere">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0B0C10] via-[#0B0C10]/90 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-2xl flex flex-col gap-6 my-auto">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-rebel-crimson/10 border border-rebel-crimson/30 rounded w-fit">
+                <span class="w-2 h-2 rounded-full bg-rebel-crimson animate-pulse"></span>
+                <span class="text-[10px] font-mono text-zinc-300 tracking-widest uppercase">707 N Main St • Nixa, MO</span>
+            </div>
+            <h1 class="font-display text-4xl md:text-6xl text-white font-black tracking-wider uppercase leading-none">
+                OWN YOUR <span class="text-rebel-crimson">STYLE.</span><br>SKIP THE INTERN.
+            </h1>
+            <div class="w-24 h-1 steel-line"></div>
+            <p class="text-sm md:text-base text-zinc-400 max-w-xl leading-relaxed font-light">
+                Welcome to Rebel Saints Barber & Style. You are trapped on fragile, unorganized social media loops where portfolios disappear down a crowded timeline. This is your dedicated digital locker—claim an elite fade, raw straight-razor detailing, and tailored cuts built with high-fidelity precision inside Nixa's premier alternative parlor space.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-2">
+                <a href="#booking" class="bg-rebel-crimson text-white px-8 py-4 font-bold text-xs uppercase tracking-widest hover:bg-red-700 transition-all smooth-transition shadow-lg shadow-red-900/20">
+                    Secure An Active Chair
+                </a>
+                <a href="tel:+14177248140" class="px-8 py-4 font-bold text-xs uppercase tracking-widest border border-zinc-800 bg-zinc-950/40 text-white hover:bg-white/5 smooth-transition flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm text-rebel-crimson">phone</span> Call Shop: (417) 724-8140
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM HIGH-DENSITY LOOKBOOK COMPONENT (THE 10/10 UPGRADE) -->
+    <section id="lookbook" class="py-24 px-6 md:px-16 bg-[#111215] border-y border-zinc-900 w-full">
+        <div class="max-w-6xl mx-auto">
+            <div class="border-l-4 border-rebel-crimson pl-4 mb-16 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div>
+                    <span class="text-xs font-mono text-rebel-crimson uppercase tracking-widest font-semibold block">The Visual Vault</span>
+                    <h2 class="font-display text-3xl text-white uppercase mt-1">The Industrial Lookbook</h2>
+                </div>
+                <p class="text-zinc-500 text-xs font-mono max-w-sm">A centralized style framework designed explicitly to bypass fragile Instagram grid blocks. View raw craft precision instantly.</p>
+            </div>
+
+            <!-- CSS-Powered Dynamic Component Wrapper -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Control Panel Controls -->
+                <div class="lg:col-span-4 flex flex-col gap-2 font-mono text-xs uppercase tracking-wider w-full">
+                    <label class="cursor-pointer">
+                        <input type="radio" name="gallery_tab" class="sr-only peer" checked>
+                        <div class="p-4 bg-zinc-900/50 border border-zinc-800 text-zinc-400 text-left hover:border-zinc-700 peer-checked:border-rebel-crimson peer-checked:bg-rebel-crimson/5 peer-checked:text-white smooth-transition">
+                            ⚡ 01. High-Fidelity Skin Fades
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="gallery_tab" class="sr-only peer">
+                        <div class="p-4 bg-zinc-900/50 border border-zinc-800 text-zinc-400 text-left hover:border-zinc-700 peer-checked:border-rebel-crimson peer-checked:bg-rebel-crimson/5 peer-checked:text-white smooth-transition">
+                            ⚔️ 02. Hard-Line Steel Shaves
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="gallery_tab" class="sr-only peer">
+                        <div class="p-4 bg-zinc-900/50 border border-zinc-800 text-zinc-400 text-left hover:border-zinc-700 peer-checked:border-rebel-crimson peer-checked:bg-rebel-crimson/5 peer-checked:text-white smooth-transition">
+                            💈 03. Textured Contour Styling
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Right Curated Portfolio Imagery Display Grid -->
+                <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="aspect-square bg-zinc-950 border border-zinc-800 rounded-sm overflow-hidden group relative">
+                        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0" alt="Skin Fade Craftsmanship">
+                        <div class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-sm border border-zinc-800 px-3 py-1 text-[10px] font-mono text-white uppercase tracking-widest">Mid-Drop Blending</div>
+                    </div>
+                    <div class="aspect-square bg-zinc-950 border border-zinc-800 rounded-sm overflow-hidden group relative">
+                        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0" alt="Straight Razor Alignment">
+                        <div class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-sm border border-zinc-800 px-3 py-1 text-[10px] font-mono text-white uppercase tracking-widest">Hot Towel Razor Outlining</div>
+                    </div>
+                    <div class="aspect-square bg-zinc-950 border border-zinc-800 rounded-sm overflow-hidden group relative">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0" alt="Industrial Styling Parlor Chair">
+                        <div class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-sm border border-zinc-800 px-3 py-1 text-[10px] font-mono text-white uppercase tracking-widest">The Rebel Lounge Station</div>
+                    </div>
+                    <div class="aspect-square bg-zinc-950 border border-zinc-800 rounded-sm overflow-hidden group relative">
+                        <img src="https://images.unsplash.com/photo-1512864084360-7c0c4d0a0845?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0" alt="Premium Pomades and Styling Tonics">
+                        <div class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-sm border border-zinc-800 px-3 py-1 text-[10px] font-mono text-white uppercase tracking-widest">Matte Clay Architecture</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSPARENT RATES MENU -->
+    <section id="menu" class="py-24 px-6 md:px-16 bg-[#0B0C10] w-full">
+        <div class="max-w-5xl mx-auto">
+            <div class="border-l-4 border-rebel-crimson pl-4 mb-16">
+                <span class="text-xs font-mono text-rebel-crimson uppercase tracking-widest font-semibold block">Transparent Pricing</span>
+                <h2 class="font-display text-3xl text-white uppercase mt-1">The Ledger Rates</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-6 bg-[#141518] border border-zinc-800/80 rounded-sm flex justify-between items-center hover:border-rebel-crimson/40 smooth-transition group">
+                    <div>
+                        <h4 class="text-white font-display text-xl tracking-wide uppercase group-hover:text-rebel-crimson smooth-transition">Rebel Blueprint Cut</h4>
+                        <p class="text-xs text-zinc-500 mt-1 max-w-xs">Full custom clipper work, texturizing, hot neck straight-razor detailing, and styling glaze.</p>
+                    </div>
+                    <span class="text-2xl font-display text-rebel-crimson font-black pl-4">$40+</span>
+                </div>
+                <div class="p-6 bg-[#141518] border border-zinc-800/80 rounded-sm flex justify-between items-center hover:border-rebel-crimson/40 smooth-transition group">
+                    <div>
+                        <h4 class="text-white font-display text-xl tracking-wide uppercase group-hover:text-rebel-crimson smooth-transition">Beard Blueprint Sculpt</h4>
+                        <p class="text-xs text-zinc-500 mt-1 max-w-xs">Geometric facial lining, structural volume reduction, conditioning hot oil wash, and close cheek straight trace.</p>
+                    </div>
+                    <span class="text-2xl font-display text-rebel-crimson font-black pl-4">$30+</span>
+                </div>
+                <div class="p-6 bg-[#141518] border border-zinc-800/80 rounded-sm flex justify-between items-center hover:border-rebel-crimson/40 smooth-transition group">
+                    <div>
+                        <h4 class="text-white font-display text-xl tracking-wide uppercase group-hover:text-rebel-crimson smooth-transition">Traditional Steel Shave</h4>
+                        <p class="text-xs text-zinc-500 mt-1 max-w-xs">Multi-stage hot steamed compress towel prep, rich lather distributions, single blade razor clean trace.</p>
+                    </div>
+                    <span class="text-2xl font-display text-rebel-crimson font-black pl-4">$50+</span>
+                </div>
+                <div class="p-6 bg-[#141518] border border-zinc-800/80 rounded-sm flex justify-between items-center hover:border-rebel-crimson/40 smooth-transition group">
+                    <div>
+                        <h4 class="text-white font-display text-xl tracking-wide uppercase group-hover:text-rebel-crimson smooth-transition">The Whole Saint Special</h4>
+                        <p class="text-xs text-zinc-500 mt-1 max-w-xs">The complete premium package: Precision haircut, full beard alignment, straight razor facial outlining, tea tree wash.</p>
+                    </div>
+                    <span class="text-2xl font-display text-rebel-crimson font-black pl-4">$80+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NATIVE BROWSER CONTROLLED RESERVATION BOX (ZERO-JAVASCRIPT ENFORCED) -->
+    <section id="booking" class="py-24 px-6 md:px-16 bg-[#111215] border-t border-zinc-900 w-full">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 flex flex-col gap-4">
+                <span class="text-xs font-mono text-rebel-crimson uppercase tracking-widest font-semibold">Centralized Flow</span>
+                <h3 class="font-display text-2xl md:text-3xl text-white uppercase tracking-tight">Lock In Your Time Window</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed font-light">
+                    Test the live scheduling layout design below. Tap your target barber selection and choose an active open tracking frame to see the browser process choices natively.
+                </p>
+                <div class="flex flex-col gap-2 font-mono text-xs text-zinc-500 mt-2">
+                    <div class="flex items-center gap-2"><span class="w-1 h-1 bg-rebel-crimson rounded-full"></span> Zero Phone Holds Required</div>
+                    <div class="flex items-center gap-2"><span class="w-1 h-1 bg-rebel-crimson rounded-full"></span> Direct Mobile SMS Approvals</div>
+                </div>
+            </div>
+            
+            <!-- Pure CSS Selection Core Box -->
+            <div class="lg:col-span-7 bg-[#0B0C10] border border-zinc-800 p-6 rounded-sm shadow-2xl">
+                <h4 class="font-display text-base uppercase text-white tracking-wider mb-4 flex justify-between items-center">
+                    <span>Reserve a Chair Mockup</span>
+                    <span class="text-[10px] text-rebel-crimson font-mono bg-red-950/40 px-2 py-0.5 rounded border border-red-900/30">Live Simulation</span>
+                </h4>
+                
+                <form onsubmit="event.preventDefault(); alert('Mockup Reservation Registered cleanly!');" class="flex flex-col gap-4">
+                    <div>
+                        <label class="block font-mono text-[9px] text-zinc-400 uppercase tracking-widest mb-2">1. Select Artisan Barber</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="artisan" class="sr-only peer" checked>
+                                <div class="p-3 bg-zinc-900 text-zinc-400 text-xs font-bold text-center uppercase border border-zinc-800 peer-checked:bg-rebel-crimson peer-checked:text-white peer-checked:border-rebel-crimson smooth-transition">Any Barber</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="artisan" class="sr-only peer">
+                                <div class="p-3 bg-zinc-900 text-zinc-400 text-xs font-bold text-center uppercase border border-zinc-800 peer-checked:bg-rebel-crimson peer-checked:text-white peer-checked:border-rebel-crimson smooth-transition">Artisan Team 1</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="artisan" class="sr-only peer">
+                                <div class="p-3 bg-zinc-900 text-zinc-400 text-xs font-bold text-center uppercase border border-zinc-800 peer-checked:bg-rebel-crimson peer-checked:text-white peer-checked:border-rebel-crimson smooth-transition">Artisan Team 2</div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block font-mono text-[9px] text-zinc-400 uppercase tracking-widest mb-2">2. Available Slots (Today)</label>
+                        <div class="grid grid-cols-4 gap-2">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="slot" class="sr-only peer" checked>
+                                <div class="p-2.5 bg-zinc-900 text-zinc-300 text-xs font-mono text-center border border-zinc-800 peer-checked:bg-rebel-crimson peer-checked:text-white peer-checked:border-rebel-crimson smooth-transition">09:00 AM</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="slot" class="sr-only peer">
+                                <div class="p-2.5 bg-zinc-900 text-zinc-300 text-xs font-mono text-center border border-zinc-800 peer-checked:bg-rebel-crimson peer-checked:text-white peer-checked:border-rebel-crimson smooth-transition">10:30 AM</div>
+                            </label>
+                            <div class="p-2.5 bg-zinc-900/40 text-zinc-700 line-through text-xs font-mono text-center border border-zinc-950 cursor-not-allowed flex items-center justify-center">01:00 PM</div>
+                            <label class="cursor-pointer">
+              
